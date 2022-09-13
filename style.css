@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+header {
+  font-size: 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+/* Background Source:
+https://www.sliderrevolution.com/resources/css-animated-background/ */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+.links {
+  float: right;
+}
+
+.links a.active {
+  border-bottom: 1px solid white;
+}
+
+.links a:first-of-type {
+  margin-left: 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 0.5em;
+}
+
+.mainButtons {
+  margin: auto;
+  padding: 5vh;
+  margin-top: 5vh;
+}
+
+#addListing {
+  background-color: #17B169;
+  color: white;
+}
+
+#removeListing {
+  background-color: #EE204D;
+  color: white;
+}
+
+
+input {
+  margin: auto;
+  width: 20vw;
+  min-width: 180px;
+}
+
+/*#inputField{
+  width: 20vw;
+  min-width: 180px;
+  color: white;
+}*/
+
+#submitAdd {
+  margin: auto;
+  margin-top: 5px;
+  background-color: #6488ea;
+  color: white;
+  width: 20vw;
+  min-width: 180px;
+}
+
+#submitRemove {
+  margin: auto;
+  margin-top: 5px;
+  background-color: #6488ea;
+  color: white;
+  width: 20vw;
+  min-width: 180px;
+}
+
+#removeBox {
+  margin-top: 5px;
+}
+
+.DOM {
+  margin: auto;
+  padding: 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.inputContainer {
+  margin: auto;
+  margin-top: 40px;
+  padding: 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-width: 100px;
+  text-align: center;
+  color: white;
+}
+
+
+.listings {
+ /*margin: auto;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-flow: column;
+  justify-content: space-between;
+  min-width: 100px;*/
+}
+
+ul {
+  margin: auto;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-flow: column;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+li {
+  color: white;
+  list-style: none;
+  margin: 10px;
+  border: 2px solid lightgray;
+  padding: 10px;
+}
+
+p {
+  margin: auto;
+  padding: 50px;
+  color: white;
+}
