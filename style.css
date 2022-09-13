@@ -76,7 +76,7 @@ body {
 
 .mainButtons {
   margin: auto;
-  padding: 5vh;
+  padding: 20px;
   margin-top: 5vh;
 }
 
@@ -136,7 +136,7 @@ input {
 
 .inputContainer {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 0px;
   display: flex;
   flex-flow: column;
